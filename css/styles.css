@@ -628,6 +628,7 @@ header {
   background-color: #FCFCFC;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   border-radius: 4px;
+  padding: 72px 24px 24px;
 }
 
 .backdrop {
@@ -646,6 +647,7 @@ header {
   margin: 0;
   border: var(--cornflower);
   padding: 0;
+  border-radius: 50%;
 }
 
 .is-hidden {
@@ -753,7 +755,7 @@ header {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
-
+  padding-bottom: 16px;
 }
 
 .circle-3 {
@@ -761,9 +763,9 @@ header {
   width: 24px;
   height: 24px;
   background-color: var(--cornflower);
-  color: var(--navy);
+  fill: var(--navy);
   margin: 0;
-  padding: 0;
+  padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -772,17 +774,17 @@ header {
 
 .circle-3:hover{
   background-color: var(--ocean);
-  color: var(--cornflower);
+  fill: var(--cornflower);
   cursor: pointer;
 }
 .circle-3:focus {
   background-color: var(--ocean);
-  color: var(--cornflower);
+  fill: var(--cornflower);
   cursor: pointer;
 }
 .circle-3:active {
   background-color: var(--ocean);
-  color: var(--cornflower);
+  fill: var(--cornflower);
   cursor: pointer;
 }
 
@@ -790,14 +792,14 @@ header {
   padding: 72px 0 16px;
   border: none;
 }
-
   .modal-label{
     color: #8E8F99;
     font-family: 'Roboto';
     font-size: 12px;
     font-style: normal;
     line-height: 1.16;
-    letter-spacing: 0.48px;  
+    letter-spacing: 0.48px; 
+    padding: 8px 0 4px 0; 
   }
 
 .modal-icon{
@@ -813,7 +815,7 @@ header {
   align-items: center;
   border-radius: 4px;
   border: 1px solid #2E2F4266;
-  width: 360px;
+  width: 100%;
   height: 40px;
   font-size: 12px;
   line-height: 1.16;
@@ -825,14 +827,11 @@ header {
     position: relative;
     border-radius: 4px;
     border: 1px solid #2E2F4266;
-    width: 360px;
+    width: 100%;
     height: 120px;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.48px;
-    margin: 0;
-    padding-top: 8px;
-
     }
 
 .custom-input {
@@ -844,16 +843,15 @@ header {
 }
 
 .custom-input-comment{
-  border: none;
+  border: 1 px solid #8E8F99;
   outline: none;
-  width: 100%;
-  padding-left: 24px;
+  height: 120px;
+  resize: none;
+  padding:8px 0 0 16px;
 }
 
 
-.form-m{
-  padding-left:24px;
-}
+
 
 
 .tc-text{
@@ -917,6 +915,13 @@ input[type="checkbox"] {
   letter-spacing: 0.48px;
 }
 
+.link-pp{
+  color: var(--iris);
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+
 .checkbox:checked~.checkbox-icon {
   color: white;
   fill: var(--white);
@@ -956,6 +961,7 @@ input[type="checkbox"] {
   border-radius: 4px;
   background: var(--iris, #4D5AE5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
   color: var(--white);
   align-items: center;
   width: 169px;
