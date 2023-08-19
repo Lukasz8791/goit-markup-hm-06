@@ -863,6 +863,7 @@ header {
   font-style: normal;
   line-height: 1.16;
   letter-spacing: 0.48px;
+  margin-left: 24px;
 }
 
 .link-tc{
@@ -887,7 +888,12 @@ input[type="checkbox"] {
   appearance: none;
 }
 
+input:checked{
+  fill: var(--iris);
+}
+
 .checkbox-icon {
+  position: absolute;
   display: flex;
   width: 16px;
   height: 16px;
@@ -897,11 +903,6 @@ input[type="checkbox"] {
   margin-right: 8px;
   transition: background-color var(--animation);
 }
-
-.checkbox-icon>:checked {
-  fill: var(--iris);
-}
-
 
 .input-with-icon:focus-within{
   border-color: var(--iris);
