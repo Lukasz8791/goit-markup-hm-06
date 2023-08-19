@@ -888,13 +888,14 @@ input[type="checkbox"] {
   appearance: none;
 }
 
-input:checked{
-  fill: var(--iris);
+.modal-row{
+  display: flex;
 }
 
 .checkbox-icon {
-  position: absolute;
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   fill: none;
@@ -902,7 +903,26 @@ input:checked{
   border: 1px solid #2E2F4266;
   margin-right: 8px;
   transition: background-color var(--animation);
+  color: white;
 }
+
+
+
+.input-label{
+  color: var(#8E8F99);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 1.16;
+  letter-spacing: 0.48px;
+}
+
+.checkbox:checked~.checkbox-icon {
+  color: white;
+  fill: var(--white);
+  background-color: var(--iris);
+}
+
 
 .input-with-icon:focus-within{
   border-color: var(--iris);
